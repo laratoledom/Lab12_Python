@@ -25,4 +25,30 @@ O exemplo a seguir mostra um mapa que Jayce recebeu, sendo que a posição inici
 T O O O O O O O Q <br>
 #&nbsp; L&nbsp; L&nbsp; L&nbsp; L&nbsp; L&nbsp; L&nbsp; L&nbsp; N <br>
 #&nbsp; N O O O O O O T </p>
+<br>
+
+Jayce andará para o norte, depois duas vezes para o leste, uma vez para o sul, cinco vezes para o leste, uma vez para o norte e uma vez para oeste, até encontrar o portal HexTech Q. Como Jayce entrou no portal vindo pelo oeste, ele sairá a oeste do outro portal Q (localizado na posição (4, 8)), ou seja, ele sairá na posição (4, 7). Na sequência, ele andará sete vezes para oeste e entrará no portal HexTech T, onde sairá na posição (6, 7), a oeste do outro portal T (localizado na posição (6,8)). Depois, andará seis vezes para oeste, uma vez para norte, sete vezes para leste e uma vez para norte, até encontrar o portal Q, saindo ao norte do outro portal Q (localizado na posição (1, 7)), ou seja, saindo na posição (0,7), onde está localizada a cidade de Piltover.
+
+Caso Jayce saia do mapa, entre em loop (repita um caminho já feito) ou encontre um bloqueio, ele não conseguirá chegar em Piltover.
+
+Portanto, sua tarefa será, dado um mapa, indicar se Jayce chegará ou não em Piltover. Para isto, seu código deverá ler um valor L, indicando quantas linhas o mapa possui, seguido por L linhas. Depois, o seu código deverá ler a posição inicial de Jayce.
+
+Caso Jayce consiga chegar em Piltover, seu código deverá imprimir: <strong>"Jayce conseguiu chegar em Piltover"</strong>
+
+Caso contrário, seu código deverá imprimir: <strong>"Jayce nao conseguiu chegar em Piltover"</strong>
+<br><br>
+
+<strong>Dica:</strong> Construa um dicionário com as posições de cada par de portais. Por exemplo, no exemplo acima, o dicionário teria o seguinte conteúdo: <br>
+> print(portais) <br>
+# {'Q': [[1, 7], [4, 8]], 'T': [[4, 0], [6, 8]]} <br>
+> print(portais["T"]) <br>
+# [[4, 0], [6, 8]] <br>
+> print(portais["T"][0]) <br>
+# [4, 0] <br>
+> print(portais["T"][1]) <br>
+# [6, 8] <br>
+___
+
+<strong>Observações:</strong> O arquivo foi executado através do PyCharm e no arquivo "testes" podem ser encontrados alguns exemplos de testes que verificam o código.
+
 
