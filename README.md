@@ -40,13 +40,13 @@ Caso contrário, seu código deverá imprimir: <strong>"Jayce nao conseguiu cheg
 
 <strong>Dica:</strong> Construa um dicionário com as posições de cada par de portais. Por exemplo, no exemplo acima, o dicionário teria o seguinte conteúdo: <br>
 > print(portais) <br>
-# {'Q': [[1, 7], [4, 8]], 'T': [[4, 0], [6, 8]]} <br>
+- {'Q': [[1, 7], [4, 8]], 'T': [[4, 0], [6, 8]]} <br>
 > print(portais["T"]) <br>
-# [[4, 0], [6, 8]] <br>
+- [[4, 0], [6, 8]] <br>
 > print(portais["T"][0]) <br>
-# [4, 0] <br>
+- [4, 0] <br>
 > print(portais["T"][1]) <br>
-# [6, 8] <br>
+- [6, 8] " <br>
 ___
 
 <strong>Observações:</strong> O arquivo foi executado através do PyCharm e no arquivo "testes" podem ser encontrados alguns exemplos de testes que verificam o código.
